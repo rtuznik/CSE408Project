@@ -158,7 +158,7 @@ end
 
 %2.2: Start at every space
 if(part2 == 2)
-    w = ones(40, 1);
+    w = ones(40, 1)/40;
 end
 
 %Part 3: Calculate final w vector after convergence

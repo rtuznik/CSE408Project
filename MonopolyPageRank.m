@@ -1,6 +1,4 @@
-%Calculate the best spot at different number of rolls
-%Calculate the a factor with prbability, income, and cost
-%Figure out why orange isn't higher
+%Toggleable options (4, 1, 2 is the most complete sequence)
 part1 = 4; %1, 2, 3, or 4
 part2 = 1; %1 or 2
 part4 = 2; %1 or 2
@@ -190,7 +188,7 @@ for i=1:40
 end
 figure(2);
 G2 = graph(s, t);
-P2 = plot(G2, 'XData', xData, 'YData', yData, 'NodeLabel', nodeLabels);
+P2 = plot(G2, 'XData', xData, 'YData', yData, 'NodeLabel', nodeLabels, 'MarkerSize', 10);
 colormap jet;
 simplifiedW = round(w, 6); %Used to ensure the color scale isn't sensitive to small differences
 P2.NodeCData = simplifiedW;
@@ -428,5 +426,3 @@ for i=1:size(scoresWithCost, 2)
     end
     fprintf("\n");
 end
-
-    
